@@ -6,10 +6,10 @@ import Summary from "./Summary";
 
 class App extends  React.Component {
     constructor(props){
-        super(props)
+        super(props);
         this.state = {
-            selectedPokemon: {}
-        }
+            selectedPokemon: false
+        };
 
         this.onPokemonClick = this.onPokemonClick.bind(this);
     }
@@ -26,7 +26,7 @@ class App extends  React.Component {
     render(){
         return (
             <div className="App">
-                <Summary pokemon={this.state.selectedPokemon}/>
+                {this.state.selectedPokemon && <Summary {...this.state.selectedPokemon}/>}
                 {
                     pokemons.map((item) => {
                         return <Pokemon {...item} onPokemonClick={this.onPokemonClick} key={item.id}/>

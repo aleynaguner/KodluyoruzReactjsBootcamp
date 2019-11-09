@@ -11,7 +11,9 @@ class Pokemon extends React.Component {
     render(){
         return <ul
             onClick={() => {
-                this.props.onPokemonClick(this.props.id);
+                if(!this.props.isSummary){
+                    this.props.onPokemonClick(this.props.id);
+                }
             }}
             style={{background:this.state.color, padding:"15px", margin: "10px"}}>
             <li>{this.props.name}</li>
