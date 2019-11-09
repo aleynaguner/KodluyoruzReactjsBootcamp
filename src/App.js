@@ -10,16 +10,23 @@ class App extends  React.Component {
         this.state = {
             selectedPokemon: {}
         }
+
+        this.onPokemonClick = this.onPokemonClick.bind(this);
     }
 
     onPokemonClick(id){
-        console.log(id);
+        const selectedPokemon = pokemons.find((pokemon) => {
+            return pokemon.id === id;
+        });
+        this.setState({
+            selectedPokemon
+        });
     }
 
     render(){
         return (
             <div className="App">
-                <Summary />
+                <Summary pokemon={this.state.selectedPokemon}/>
                 {
                     pokemons.map((item) => {
                         return <Pokemon {...item} onPokemonClick={this.onPokemonClick} key={item.id}/>
