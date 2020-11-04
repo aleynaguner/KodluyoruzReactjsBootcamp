@@ -1,0 +1,13 @@
+--07/12/2019
+boş string false döner.
+
+içinde BrowserRouter'ı hash ile değiştirirse
+deployda sıkıntı çıkmaz
+
+npm install gh-pages
+predeploy npm run build
+deploy gh pages -d build
+
+create-react-app ts-example --template typescript
+
+npm install --save typescript @types/node @types/react @types/react-dom

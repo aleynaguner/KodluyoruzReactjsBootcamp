@@ -1,0 +1,14 @@
+prop vs state
+prop değiştirelemez
+
+summary ile parent'a veri geçme işlemini yaptık
+
+yukarı taşınan id yi
+seçilen yerde seçili pokemonu göster
+
+summary kısmında seçilen pokemonu göster
+
+eğer tıklanmadıysa pokemon döndürmesin appte
+
+
+

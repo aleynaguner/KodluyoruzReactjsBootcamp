@@ -1,0 +1,18 @@
+fonskiyonun içinde this kullanılıyorsa bu metod 
+bind edilmeli yoksa hata verir
+
+formun varsayılan davranışı gelen datayı alıp
+başka bir sayfaya post etmektir. Bu eventi kendimiz
+elimizle kesebiliriz.
+
+LifeCycle Methods
+Mounting
+sayfaya basılmasıyla alakalı metodlar
+
+
+x = localTodos || []
+ x in daha önce bir değeri varsa 1. 
+yoksa boş array olan ikinciyi alıyo
+
+
+
